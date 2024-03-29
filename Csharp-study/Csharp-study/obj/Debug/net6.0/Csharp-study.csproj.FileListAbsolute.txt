@@ -1,0 +1,14 @@
+C:\Github\C-study\Csharp-study\Csharp-study\bin\Debug\net6.0\Csharp-study.exe
+C:\Github\C-study\Csharp-study\Csharp-study\bin\Debug\net6.0\Csharp-study.deps.json
+C:\Github\C-study\Csharp-study\Csharp-study\bin\Debug\net6.0\Csharp-study.runtimeconfig.json
+C:\Github\C-study\Csharp-study\Csharp-study\bin\Debug\net6.0\Csharp-study.dll
+C:\Github\C-study\Csharp-study\Csharp-study\bin\Debug\net6.0\Csharp-study.pdb
+C:\Github\C-study\Csharp-study\Csharp-study\obj\Debug\net6.0\Csharp-study.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\C-study\Csharp-study\Csharp-study\obj\Debug\net6.0\Csharp-study.AssemblyInfoInputs.cache
+C:\Github\C-study\Csharp-study\Csharp-study\obj\Debug\net6.0\Csharp-study.AssemblyInfo.cs
+C:\Github\C-study\Csharp-study\Csharp-study\obj\Debug\net6.0\Csharp-study.csproj.CoreCompileInputs.cache
+C:\Github\C-study\Csharp-study\Csharp-study\obj\Debug\net6.0\Csharp-study.dll
+C:\Github\C-study\Csharp-study\Csharp-study\obj\Debug\net6.0\refint\Csharp-study.dll
+C:\Github\C-study\Csharp-study\Csharp-study\obj\Debug\net6.0\Csharp-study.pdb
+C:\Github\C-study\Csharp-study\Csharp-study\obj\Debug\net6.0\Csharp-study.genruntimeconfig.cache
+C:\Github\C-study\Csharp-study\Csharp-study\obj\Debug\net6.0\ref\Csharp-study.dll

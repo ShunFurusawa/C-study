@@ -1,2 +1,2 @@
-# CS-study
+# C#-study
 C#の勉強用

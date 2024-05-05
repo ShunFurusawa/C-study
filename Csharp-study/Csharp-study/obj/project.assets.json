@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Github\\C-study\\Csharp-study\\Csharp-study\\Csharp-study.csproj",
+      "projectUniqueName": "C:\\Repositories\\C-study\\Csharp-study\\Csharp-study\\Csharp-study.csproj",
       "projectName": "Csharp-study",
-      "projectPath": "C:\\Github\\C-study\\Csharp-study\\Csharp-study\\Csharp-study.csproj",
+      "projectPath": "C:\\Repositories\\C-study\\Csharp-study\\Csharp-study\\Csharp-study.csproj",
       "packagesPath": "C:\\Users\\furus\\.nuget\\packages\\",
-      "outputPath": "C:\\Github\\C-study\\Csharp-study\\Csharp-study\\obj\\",
+      "outputPath": "C:\\Repositories\\C-study\\Csharp-study\\Csharp-study\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\furus\\AppData\\Roaming\\NuGet\\NuGet.Config",

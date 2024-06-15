@@ -4,8 +4,9 @@ namespace BasicClass
 {
     class Animal
     {
-        public string? name;
-        public int age; 
+        //正確にはこの書き方の方がよさそう
+        public string? name { set; get; }        
+        public int age { set; get; }; 
 
         public void Speak()
         {

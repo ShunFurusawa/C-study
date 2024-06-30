@@ -1,38 +1,62 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 
-namespace ArraySample
+
+namespace ListSample
 {
     class Program
     {
-        static void Main(string[] args) 
+        private static string path;
+        static void Main(string[] args)
         {
-            int[] numbers = new int[5];
-            int count = 0, maximum, minimum = 0;
+            CreateExampleText();
+        }
 
-            Console.WriteLine("Pleas enter the number");
-            //五回入力させる
-            foreach (int i in numbers)
-            {
-                Console.Write("{0}times Left : ", 5 - count);
+        private static void CreateExampleText()
+        {
+            path = "example.txt";
+            string defaultContent = "このテキストはプロカスゼミC#Studyの2.6課題用である。";
+            
+            File.WriteAllText(path, defaultContent);
+        }
+        private static void ReadAndDisplay()
+        {
+            string content = File.ReadAllText(path);
+            Console.WriteLine(content);
+        }
 
-                numbers[count] = Convert.ToInt32(Console.ReadLine());
-                count++;
-            }
-          
-            //ソートしなくても最大最小求めれるメソッドあるの知らなかった
-            maximum = numbers.Max(); minimum = numbers.Min();
-            Console.Write("Entered numbers : ");
-           
-            //一覧表示
-            foreach (int i in numbers)
+        private static void AddText()
+        {
+            using (StreamWriter writer = new StreamWriter(path))
             {
-                Console.Write("{0}, ", i);
+                for (int i = 3; i > 0; i--)
+                {
+                    Console.WriteLine($"\n\n加える文章を入力してください（{i}回まで可能、endで終了）");
+                    string text = Convert.ToString(Console.ReadLine());
+                    
+                    if (text == "end")
+                        break;
+                    
+                    writer.WriteLine(text);
+                    Console.WriteLine($"「{text}」を追記しました。"); 
+                }
             }
-         
-            Console.WriteLine("\n\nMaximum value : " +  maximum);
-            Console.WriteLine("Minimum value : " + minimum);
+        }
+
+        private static void ContainAndRemove(ref List<int> numbers)
+        {
+            Console.WriteLine("消去したい値を入力してください");
+            int num = Convert.ToInt32(Console.ReadLine());
+            
+            if (numbers.Contains(num))
+            {
+                numbers.Remove(num);
+                Console.WriteLine($"要素{num}を消去しました。");
+            }
+            else
+            {
+                Console.WriteLine($"要素{num}は存在しません。");
+            }
         }
     }
 }

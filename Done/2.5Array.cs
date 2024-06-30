@@ -21,24 +21,16 @@ namespace ArraySample
                 count++;
             }
           
-      
-            maximum = numbers[0]; minimum = numbers[0];
+            //ソートしなくても最大最小求めれるメソッドあるの知らなかった
+            maximum = numbers.Max(); minimum = numbers.Min();
             Console.Write("Entered numbers : ");
            
-            //一覧表示とソート
+            //一覧表示
             foreach (int i in numbers)
-            {              
+            {
                 Console.Write("{0}, ", i);
-
-                if (i > maximum)
-                {
-                    maximum = i;
-                }
-                else if (i < minimum)
-                {
-                    minimum = i;
-                }
             }
+         
             Console.WriteLine("\n\nMaximum value : " +  maximum);
             Console.WriteLine("Minimum value : " + minimum);
         }

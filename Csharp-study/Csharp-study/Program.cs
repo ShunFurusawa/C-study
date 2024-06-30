@@ -2,63 +2,37 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ListSample
+namespace ArraySample
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
-            List<int> numbers = new List<int>();
+            int[] numbers = new int[5];
+            int count = 0, maximum, minimum = 0;
 
             Console.WriteLine("Pleas enter the number");
             //五回入力させる
-            for (int count = 0; count < 5; count++)
+            foreach (int i in numbers)
             {
                 Console.Write("{0}times Left : ", 5 - count);
 
-                numbers.Add(Convert.ToInt32(Console.ReadLine()));
+                numbers[count] = Convert.ToInt32(Console.ReadLine());
+                count++;
             }
+          
+            //ソートしなくても最大最小求めれるメソッドあるの知らなかった
+            maximum = numbers.Max(); minimum = numbers.Min();
             Console.Write("Entered numbers : ");
-            DisplayNumbers(numbers);
-            AddNumber(ref numbers);
-            ContainAndRemove(ref numbers);
-            
-            Console.Write("消去後の要素");
-            DisplayNumbers(numbers);
-        }
-
-        private static void DisplayNumbers(List<int> numbers)
-        {
            
-            //一覧表示とソート
-            foreach (int number in numbers)
-            {              
-                Console.Write("{0}, ", number);
-            }
-        }
-
-        private static void AddNumber(ref List<int> numbers)
-        {
-            Console.WriteLine("\n\n加える値を入力してください");
-            int num = Convert.ToInt32(Console.ReadLine());
-            numbers.Add(num);
-            Console.WriteLine($"{num}を末尾に加えました");            
-        }
-
-        private static void ContainAndRemove(ref List<int> numbers)
-        {
-            Console.WriteLine("消去したい値を入力してください");
-            int num = Convert.ToInt32(Console.ReadLine());
-            
-            if (numbers.Contains(num))
+            //一覧表示
+            foreach (int i in numbers)
             {
-                numbers.Remove(num);
-                Console.WriteLine($"要素{num}を消去しました。");
+                Console.Write("{0}, ", i);
             }
-            else
-            {
-                Console.WriteLine($"要素{num}は存在しません。");
-            }
+         
+            Console.WriteLine("\n\nMaximum value : " +  maximum);
+            Console.WriteLine("Minimum value : " + minimum);
         }
     }
 }
